@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 class AuthScreen extends StatefulWidget {
@@ -96,11 +94,11 @@ class _AuthScreenState extends State<AuthScreen> {
                             ),
                             ElevatedButton(
                               onPressed: _submit,
-                              child: Text(_isLogin ? 'Log in' : 'Sign Up'),
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: Theme.of(context)
                                       .colorScheme
                                       .primaryContainer),
+                              child: Text(_isLogin ? 'Log in' : 'Sign Up'),
                             ),
                             TextButton(
                               onPressed: () {
